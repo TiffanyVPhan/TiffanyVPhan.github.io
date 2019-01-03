@@ -1,0 +1,44 @@
+body, html, h1 {
+	/*background-color: #FFE4E1;*/
+	margin: 0;
+	padding: 0;
+}
+
+#bg-1 {
+	/*background-color: #FFE4E1;*/
+	height: 140px;
+	width: 100%;
+}
+
+.bg-2 {
+	background-color: #FFE4E1;
+	height: 200px;
+	width: 100%;
+}
+
+/*#bg-3 {
+	background-color: #D3D3D3;
+	height: 300px;
+	width: 100%;
+}*/
+
+#title {
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-style: bold;
+	text-align: center;
+	font-size: 100px;
+	color: #3e4042;
+	padding: 50px;
+}
+
+#personal-photo {
+	text-align: center;
+}
+
+#personal-photo>img {
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #3e4042;
+	margin: 25px;
+}
