@@ -19,4 +19,4 @@ $.fn.followTo = function ( pos ) {
     });
 };
 
-$('#title').followTo(100);
+$('#title').followTo(200);
