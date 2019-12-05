@@ -1,0 +1,55 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.button {
+  background:    #777777;
+  /* background:    linear-gradient(#e96443, #ff5f6d); */
+  border-radius: 1px;
+  padding:       10px 19px;
+  color:         #FFF;
+  display:       inline-block;
+  font:          normal 24px/1 "Noto Sans", sans-serif;
+  text-decoration: none;
+}
+.center {
+  text-align:    center;
+}
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+.bgimg-1, .bgimg-2 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url('../static/background.jpg');
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("../static/background2.jpg");
+    min-height: 400px;
+    background-position: top;
+}
+
+.w3-wide {
+    letter-spacing: 10px;
+}
+
+@media only screen and (max-device-width: 800px) {
+    .bgimg-1, .bgimg-2 {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
+}
