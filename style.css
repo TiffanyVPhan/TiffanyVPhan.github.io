@@ -33,12 +33,12 @@ body, html {
 }
 
 .bgimg-1 {
-    background-image: url('../static/background.jpg');
+    background-image: url('./static/background.jpg');
     min-height: 100%;
 }
 
 .bgimg-2 {
-    background-image: url("../static/background2.jpg");
+    background-image: url("./static/background2.jpg");
     min-height: 400px;
     background-position: top;
 }
