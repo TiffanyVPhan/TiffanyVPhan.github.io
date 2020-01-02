@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
   }
 
+header, main, footer {
+    padding-left: 300px;
+}
+
 .button {
   background:    #777777;
   /* background:    linear-gradient(#e96443, #ff5f6d); */
@@ -34,3 +38,11 @@ body, html {
 .parallax img {
     width: 60%;
 }
+
+
+@media only screen and (max-width : 992px) {
+header, main, footer {
+    padding-left: 0;
+}
+}
+        
