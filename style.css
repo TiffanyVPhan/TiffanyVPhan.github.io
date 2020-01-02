@@ -12,11 +12,13 @@ html {
   font:          normal 24px/1 "Noto Sans", sans-serif;
   text-decoration: none;
 }
+
+.full {
+    height: 100vh;
+  }
+
 .center {
   text-align:    center;
-}
-body, h1, h2, h3, h4, h5, h6 {
-    font-family: "Lato", sans-serif;
 }
 
 body, html {
@@ -25,31 +27,10 @@ body, html {
     line-height: 1.8;
 }
 
-.bgimg-1, .bgimg-2 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.filter {
+    opacity: 0.75 !important;
 }
 
-.bgimg-1 {
-    background-image: url('./static/background.jpg');
-    min-height: 100%;
-}
-
-.bgimg-2 {
-    background-image: url("./static/background2.jpg");
-    min-height: 400px;
-    background-position: top;
-}
-
-.w3-wide {
-    letter-spacing: 10px;
-}
-
-@media only screen and (max-device-width: 800px) {
-    .bgimg-1, .bgimg-2 {
-        background-attachment: scroll;
-        min-height: 400px;
-    }
+.parallax img {
+    width: 60%;
 }
