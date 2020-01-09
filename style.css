@@ -12,35 +12,13 @@ body, html {
   line-height: 1.8;
 }
 
-.bg {
-  background-image: url("./static/background.jpg");
-  height: 100vh;
+.bgimg-1 {
+  background-image: url('./static/background.jpg');
+  min-height: 100%;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.rectangle {
-  background-color: #ffdddd;
-  height: 50px;
-  width: 100px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  margin: 0 auto;
-  margin-top:-60px;
-  margin-left:-60px;
-}
-
-.button {
-  background:    #777777;
-  /* background:    linear-gradient(#e96443, #ff5f6d); */
-  border-radius: 1px;
-  padding:       10px 19px;
-  color:         #FFF;
-  display:       inline-block;
-  font:          normal 24px/1 "Noto Sans", sans-serif;
-  text-decoration: none;
 }
 
 .full {
