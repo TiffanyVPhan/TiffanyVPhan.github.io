@@ -36,70 +36,75 @@
         </div>
     </div>
 
-<nav>
-    <div class="nav-wrapper container">
-        <a href="#!" class="brand-logo">Tiffany Phan</a>
-        <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/services">Skills</a></li>
-            <li><a href="/services">Projects</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
+    <nav class="nav-center">
+        <div class="nav-wrapper container">
+            <a href="#" data-target="mobile-menu" class="sidenav-trigger brand-logo center"><i class="material-icons">menu</i></a>
+            <ul class="center hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-menu">
+        <h3 class="center">Nav</h3>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="section z-depth-4" id="about">
+        <div class="center container padding">
+            <img src="./static/tiff.jpg" class="circle responsive-img shadow" alt="Tiffany Phan">
+            <h1>Welcome!</h1>
+            <p>My name is Tiffany Phan. I am a current junior at the University of Colorado at Boulder and am majoring in Computer Science. 
+                I intend to pursue the concurrent BS/MS program offered at my institution.
+                My interests lie in software development, data science, big data, bioinformatics, cybersecurity, genetics, and molecular biology.
+                I enjoy participating in hackathons. </p>
+        </div>
     </div>
-</nav>
 
-<ul class="sidenav" id="mobile-menu">
-    <h3 class="center">Nav</h3>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/services">Skills</a></li>
-    <li><a href="/services">Projects</a></li>
-    <li><a href="/contact">Contact</a></li>
-</ul>
-<div class="section z-depth-4">
-    <div class="center container">
-        <h1>Welcome!</h1>
-        <p>My name is Tiffany Phan. I am a current junior at the University of Colorado at Boulder and am majoring in Computer Science.
-            I intend to pursue the concurrent BS/MS program offered at my institution.
-            My interests lie in software development, data science, big data, bioinformatics, cybersecurity, genetics, and molecular biology.
-            I enjoy participating in hackathons. </p>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="./static/darkened.jpg"></div>
     </div>
-</div>
 
+    <div class="z-depth-4">
+        <div class="section center container" id="skills">
+            <h1>Skills</h1>
+        </div>
 
-<div class="parallax-container">
-    <div class="parallax"><img src=""></div>
-</div>
-
-<div class="z-depth-4">
-    <div class="section container">
-        <h4 class="center">How I Can Help</h4>
-        <div class="row">
-            <div class="col m6 s12">
-                <div class="card">
-                    <div class="card-content center">
-                        <div class="card-title">Service 1</div>
-                        <p>Some information about the service including what it is and who it is for.</p>
-                        <br>
-                        <a href="/services" class="btn">Learn More</a>
+        <div class="section container" id="projects">
+            <h1 class="center">My Projects</h1>
+            <div class="row">
+                <div class="col m6 s12">
+                    <div class="card">
+                        <div class="card-content center">
+                            <div class="card-title">Service 1</div>
+                            <p>Some information about the service including what it is and who it is for.</p>
+                            <br>
+                            <a href="/services" class="btn">Learn More</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col m6 s12">
-                <div class="card">
-                    <div class="card-content center">
-                        <div class="card-title">Service 2</div>
-                        <p>Some information about the service including what it is and who it is for.</p>
-                        <br>
-                        <a href="/services" class="btn">Learn More</a>
+                <div class="col m6 s12">
+                    <div class="card">
+                        <div class="card-content center">
+                            <div class="card-title">Service 2</div>
+                            <p>Some information about the service including what it is and who it is for.</p>
+                            <br>
+                            <a href="/services" class="btn">Learn More</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
         <footer class="page-footer">
             <div class="container">
                 <div class="row">

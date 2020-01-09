@@ -12,6 +12,35 @@ body, html {
   line-height: 1.8;
 }
 
+p {
+  font-size: larger;
+}
+
+nav.nav-center ul {
+  text-align: center;
+}
+nav.nav-center ul li {
+  display: inline;
+  float: none;
+}
+nav.nav-center ul li a {
+  display: inline-block;
+}
+
+.shadow {
+  box-shadow: 3px 3px 5px black; 
+  width: 200px;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.padding {
+  max-width: 700px;
+}
+
 .bgimg-1 {
   background-image: url('./static/background.jpg');
   min-height: 100%;
@@ -21,6 +50,9 @@ body, html {
   background-size: cover;
 }
 
+.parallax {
+  background-color: black;
+}
 .full {
     height: 100vh;
   }
@@ -36,7 +68,6 @@ body, html {
 .parallax img {
     width: 60%;
 }
-
 
 @media only screen and (max-width : 992px) {
 header, main, footer {
