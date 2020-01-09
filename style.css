@@ -32,6 +32,15 @@ nav.nav-center ul li a {
   width: 200px;
 }
 
+.button {
+  background:    linear-gradient(#e96443, #ff5f6d);
+  border-radius: 1px;
+  padding:       10px 19px;
+  color:         #FFF;
+  display:       inline-block;
+  font:          normal 20px/1 "Noto Sans", sans-serif;
+}
+
 .section {
   padding-top: 50px;
   padding-bottom: 50px;
