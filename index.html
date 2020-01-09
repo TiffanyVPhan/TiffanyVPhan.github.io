@@ -1,37 +1,33 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Tiffany Phan</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="../static/favicon.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155857043-1"></script>
+     <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', 'UA-155857043-1');
+     </script>
+ 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link type="text/css" rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+          media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="/global.css" media="screen, projection"/>
+    <link rel="icon" href="./static/favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="description" content="Template 2">
+    <meta name="keywords" content="Template 2">
+    <meta name="author" content="Tiffany Phan">
+
+    <title>Tiffany Phan</title>
 </head>
-
 <body>
-    <nav> <!-- navbar content here  --> </nav>
 
-    <ul id="slide-out" class="sidenav">
-      <li><div class="user-view">
-        <div class="background">
-          <img src="images/office.jpg">
-        </div>
-        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-        <a href="#name"><span class="white-text name">John Doe</span></a>
-        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-      </div></li>
-      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-      <li><a href="#!">Second Link</a></li>
-      <li><div class="divider"></div></li>
-      <li><a class="subheader">Subheader</a></li>
-      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-    </ul>
-    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    
-    <div id="index-banner" class="parallax-container full">
+    <!-- <div id="index-banner" class="parallax-container full">
         <div class="section no-pad-bot">
             <div class="container">
             <br><br>
@@ -44,26 +40,104 @@
             </div>
         </div>
         <div class="parallax"><img class="filter" src="./static/background.jpg" alt="Unsplashed background img 1"></div>
-    </div>
-    
-    <ul id="slide-out" class="sidenav sidenav-fixed">
-        <li><a href="#!">First Sidebar Link</a></li>
-        <li><a href="#!">Second Sidebar Link</a></li>
-      </ul>
-      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
+    </div> -->
+    <div class="bg filter">
+        <div class="rectangle">hi</div>
     </div>
 
-    <!-- <div class="parallax-container">
-        <div class="parallax"><img src="https://i.ibb.co/ZNznSg8/kitten4.jpg"></div>
-        
-        <h1>stuff that goes over the cat</h1>
-      </div> -->
+<nav>
+    <div class="nav-wrapper container">
+        <a href="#!" class="brand-logo">Tiffany Phan</a>
+        <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Skills</a></li>
+            <li><a href="/services">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <!-- scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
-    <script src="index.js"></script>  
+<ul class="sidenav" id="mobile-menu">
+    <h3 class="center">Nav</h3>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/services">Skills</a></li>
+    <li><a href="/services">Projects</a></li>
+    <li><a href="/contact">Contact</a></li>
+</ul>
+<div class="section z-depth-4">
+    <div class="center container">
+        <h1>Welcome!</h1>
+        <p>My name is Tiffany Phan. I am a current junior at the University of Colorado at Boulder and am majoring in Computer Science.
+            I intend to pursue the concurrent BS/MS program offered at my institution.
+            My interests lie in software development, data science, big data, bioinformatics, cybersecurity, genetics, and molecular biology.
+            I enjoy participating in hackathons. </p>
+    </div>
+</div>
 
-</body>
 
+<div class="parallax-container">
+    <div class="parallax"><img src=""></div>
+</div>
+
+<div class="z-depth-4">
+    <div class="section container">
+        <h4 class="center">How I Can Help</h4>
+        <div class="row">
+            <div class="col m6 s12">
+                <div class="card">
+                    <div class="card-content center">
+                        <div class="card-title">Service 1</div>
+                        <p>Some information about the service including what it is and who it is for.</p>
+                        <br>
+                        <a href="/services" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col m6 s12">
+                <div class="card">
+                    <div class="card-content center">
+                        <div class="card-title">Service 2</div>
+                        <p>Some information about the service including what it is and who it is for.</p>
+                        <br>
+                        <a href="/services" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Template 2</h5>
+                        <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur elit dolor. Vivamus in congue enim. Donec et ultrices diam. Fusce eu laoreet urna, at rutrum risus. Nulla facilisi.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul>
+                            <li><a class="white-text" href="/">Home</a></li>
+                            <li><a class="white-text" href="/about">About</a></li>
+                            <li><a class="white-text" href="/services">Services</a></li>
+                            <li><a class="white-text" href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright white-text">
+                <div class="container">
+                    © <script>document.write(new Date().getFullYear())</script>
+                    <a class="white-text right" href="https://joshfrankl.in/privacy">Privacy</a>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script src="index.js"></script>  
+
+        <!--{! BUILD WARNING (missing analytics tag) !}-->
+    </body>
 </html>

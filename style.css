@@ -6,6 +6,32 @@ header, main, footer {
     padding-left: 300px;
 }
 
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+.bg {
+  background-image: url("./static/background.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rectangle {
+  background-color: #ffdddd;
+  height: 50px;
+  width: 100px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  margin-top:-60px;
+  margin-left:-60px;
+}
+
 .button {
   background:    #777777;
   /* background:    linear-gradient(#e96443, #ff5f6d); */
@@ -23,12 +49,6 @@ header, main, footer {
 
 .center {
   text-align:    center;
-}
-
-body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
 }
 
 .filter {
