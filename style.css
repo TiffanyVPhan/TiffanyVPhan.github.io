@@ -27,6 +27,22 @@ nav.nav-center ul li a {
   display: inline-block;
 }
 
+.largetext {
+  font-size: 25px;
+}
+
+.smalltext {
+  font-size: 20px;
+}
+
+.smallertext {
+  font-size: 15px;
+}
+
+.leftalign {
+  text-align: left;
+  padding-left: 50px;
+}
 .shadow {
   box-shadow: 3px 3px 5px black; 
   width: 200px;
@@ -67,7 +83,7 @@ nav.nav-center ul li a {
   }
 
 .center {
-  text-align:    center;
+  text-align: center;
 }
 
 .filter {
