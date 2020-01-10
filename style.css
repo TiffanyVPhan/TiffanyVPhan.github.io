@@ -16,6 +16,10 @@ p {
   font-size: larger;
 }
 
+span {
+  white-space: pre;
+}
+
 nav.nav-center ul {
   text-align: center;
 }
@@ -36,9 +40,26 @@ nav.nav-center ul li a {
 }
 
 .smallertext {
-  font-size: 15px;
+  font-size: 17px;
 }
 
+.tinytext {
+  font-size: 13px;
+}
+
+.company-logo {
+  float: right;
+}
+
+.resize {
+  width: 100px;
+  height: auto;
+}
+
+.resize {
+  width: auto;
+  height: 50px;
+}
 .leftalign {
   text-align: left;
   padding-left: 50px;
