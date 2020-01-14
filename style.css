@@ -2,54 +2,122 @@ html {
     scroll-behavior: smooth;
   }
 
+header, main, footer {
+    padding-left: 300px;
+}
+
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+p {
+  font-size: larger;
+}
+
+span {
+  white-space: pre;
+}
+
+nav.nav-center ul {
+  text-align: center;
+}
+nav.nav-center ul li {
+  display: inline;
+  float: none;
+}
+nav.nav-center ul li a {
+  display: inline-block;
+}
+
+.largetext {
+  font-size: 25px;
+}
+
+.smalltext {
+  font-size: 20px;
+}
+
+.smallertext {
+  font-size: 17px;
+}
+
+.tinytext {
+  font-size: 13px;
+}
+
+.resize {
+  width: 100px;
+  height: auto;
+}
+
+.resize {
+  width: auto;
+  height: 50px;
+}
+.leftalign {
+  text-align: left;
+  padding-left: 50px;
+}
+.shadow {
+  box-shadow: 3px 3px 5px black; 
+  width: 200px;
+}
+
 .button {
-  background:    #777777;
-  /* background:    linear-gradient(#e96443, #ff5f6d); */
+  background:    linear-gradient(#e96443, #ff5f6d);
   border-radius: 1px;
   padding:       10px 19px;
   color:         #FFF;
   display:       inline-block;
-  font:          normal 24px/1 "Noto Sans", sans-serif;
-  text-decoration: none;
-}
-.center {
-  text-align:    center;
-}
-body, h1, h2, h3, h4, h5, h6 {
-    font-family: "Lato", sans-serif;
+  font:          normal 20px/1 "Noto Sans", sans-serif;
 }
 
-body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.bgimg-1, .bgimg-2 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.padding {
+  max-width: 700px;
 }
 
 .bgimg-1 {
-    background-image: url('./static/background.jpg');
-    min-height: 100%;
+  background-image: url('./static/background.jpg');
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.bgimg-2 {
-    background-image: url("./static/background2.jpg");
-    min-height: 400px;
-    background-position: top;
+.parallax {
+  background-color: black;
+}
+.full {
+    height: 100vh;
+  }
+
+.center {
+  text-align: center;
 }
 
-.w3-wide {
-    letter-spacing: 10px;
+.filter {
+    opacity: 0.75 !important;
 }
 
-@media only screen and (max-device-width: 800px) {
-    .bgimg-1, .bgimg-2 {
-        background-attachment: scroll;
-        min-height: 400px;
-    }
+ul.arrowlist > li::before {
+  content: "> ";
 }
+
+.parallax img {
+    width: 60%;
+}
+
+@media only screen and (max-width : 992px) {
+header, main, footer {
+    padding-left: 0;
+}
+}
+        
