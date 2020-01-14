@@ -47,10 +47,6 @@ nav.nav-center ul li a {
   font-size: 13px;
 }
 
-.company-logo {
-  float: right;
-}
-
 .resize {
   width: 100px;
   height: auto;
@@ -109,6 +105,10 @@ nav.nav-center ul li a {
 
 .filter {
     opacity: 0.75 !important;
+}
+
+ul.arrowlist > li::before {
+  content: "> ";
 }
 
 .parallax img {
