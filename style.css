@@ -83,6 +83,26 @@ nav.nav-center ul li a {
   max-width: 700px;
 }
 
+.col-container {
+  display: flex; 
+  width: 100%; 
+}
+
+.project-col {
+  flex: 1;
+  padding: 16px;
+}
+
+.max-height {
+  height: 100%;
+}
+
+.card-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .bgimg-1 {
   background-image: url('./static/background.jpg');
   min-height: 100%;
