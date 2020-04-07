@@ -5,6 +5,7 @@ html {
 header, main, footer {
     padding-left: 300px;
 }
+
 body {
   font-family: "Noto Sans";
   font-weight: bold;
@@ -14,9 +15,13 @@ div {
   display: block;
 }
 
+div > img {
+  margin-top: 30%;
+}
+
 nav {
   position: fixed;
-  border-bottom: 1.5px solid #000;
+  border-bottom: 1.5px solid~ #000;
 }
 
 /* .row-full {
@@ -28,22 +33,14 @@ nav {
   border-top: 1.5px solid black;
 } */
 
+.box {
+  /* margin: 50px; */
+  padding: 20px;
+}
+
 .btn {
   text-transform: none;
   /* background-color: #f48fb1; */
-}
-
-.shadow-circle{
-  border: 1.5px solid black;
-  /* box-shadow: 0px 0px 0px 10px blue; */
-  /* border-radius: 50%; */
-}
-.offset {
-  box-shadow: 0.4em 0.3em 0 0 #000;
-}
-
-.square {
-  border-radius: 0!important;
 }
 
 .btn-layered {
@@ -57,4 +54,22 @@ nav {
 
 .btn-layered:hover {
   background-color: #f48fb1 !important;
+}
+
+.offset {
+  box-shadow: 0.4em 0.3em 0 0 #000;
+}
+
+.shadow-circle{
+  border: 1.5px solid black;
+  /* box-shadow: 0px 0px 0px 10px blue; */
+  /* border-radius: 50%; */
+}
+
+.square {
+  border-radius: 0!important;
+}
+
+.title {
+  font-weight: 800;
 }
