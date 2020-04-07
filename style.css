@@ -15,27 +15,9 @@ div {
   display: block;
 }
 
-div > img {
-  margin-top: 30%;
-}
-
 nav {
   position: fixed;
-  border-bottom: 1.5px solid~ #000;
-}
-
-/* .row-full {
-  width: 100vw;
-  position: relative;
-  margin-left: -50vw;
-  height: 100px;
-  left: 50%;
-  border-top: 1.5px solid black;
-} */
-
-.box {
-  /* margin: 50px; */
-  padding: 20px;
+  border-bottom: 1.5px solid #000;
 }
 
 .btn {
@@ -56,14 +38,20 @@ nav {
   background-color: #f48fb1 !important;
 }
 
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%)
+}
+
 .offset {
   box-shadow: 0.4em 0.3em 0 0 #000;
 }
 
 .shadow-circle{
-  border: 1.5px solid black;
-  /* box-shadow: 0px 0px 0px 10px blue; */
-  /* border-radius: 50%; */
+  box-shadow: 3px 3px 5px black;
+  width: 140;
 }
 
 .square {
