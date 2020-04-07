@@ -19,6 +19,7 @@
     <link type="text/css" rel="stylesheet" href="/global.css" media="screen, projection"/>
     <link rel="icon" href="./static/favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="UTF-8">
@@ -29,27 +30,19 @@
     <title>Tiffany Phan</title>
 </head>
 <body>
-
-    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-        <div class="w3-display-middle" style="white-space:nowrap;">
-            <span class="w3-center w3-padding-large w3-pale-red w3-xlarge w3-wide w3-animate-opacity">TIFFANY PHAN</span>
-        </div>
-    </div>
-
-    <nav class="nav-center">
+    <nav class="nav-center white">
         <div class="nav-wrapper container">
-            <a href="#" data-target="mobile-menu" class="sidenav-trigger brand-logo center"><i class="material-icons">menu</i></a>
-            <ul class="center hide-on-med-and-down">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <a href="#" data-target="mobile-menu" class="sidenav-trigger brand-logo right"><i class="material-icons black-text">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#" class="black-text">Home</a></li>
+                <li><a href="#about" class="black-text">About</a></li>
+                <li><a href="#experience" class="black-text">Experience</a></li>
+                <li><a href="#projects" class="black-text">Projects</a></li>
+                <li><a href="#skills" class="black-text">Skills</a></li>
+                <li><a href="mailto:tiffany.phan@colorado.edu" class="black-text btn btn-layered white offset square">Hire Me</a></li>
             </ul>
         </div>
     </nav>
-
     <ul class="sidenav" id="mobile-menu">
         <h3 class="center">Nav</h3>
         <li><a href="#">Home</a></li>
@@ -57,11 +50,11 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="mailto:tiffany.phan@colorado.edu">Contact</a></li>
     </ul>
 
-    <div class="section z-depth-4" id="about">
-        <div class="center container padding">
+    <div class="row-full row section container">
+        <div class="center padding col s3 offset-s3" id="about">
             <img src="./static/tiff.jpg" class="circle responsive-img shadow" alt="Tiffany Phan">
             <h1>Welcome!</h1>
             <p>My name is Tiffany Phan. I am a current junior at the University of Colorado at Boulder and am majoring in Computer Science. 
@@ -70,122 +63,9 @@
                 I enjoy participating in hackathons.</p>
         </div>
     </div>
-
-    <div class="parallax-container">
-        <div class="parallax"><img src="./static/darkened.jpg"></div>
-    </div>
-
-    <div class="z-depth-4">
-        <div class="section center container" id="experience">
-            <h1>Experience</h1>
-            <a href="./static/resume.pdf" class="button">Download My Resume</a>
-            <hr>
-            <div class="leftalign">
-                <span class="largetext">Visa</span>
-                <span class="smalltext">| Incoming Software Engineer Intern Summer 2020</span>
-                <img src="./static/companies/visa.png" class="right resize">
-                <br>
-                <i class="tiny material-icons">location_on</i>Austin, Texas
-            </div>
-            <hr>
-            <div class="leftalign">
-                <span class="largetext">LASP</span>
-                <span class="smalltext">| Undergraduate Software Developer</span>
-                <img src="./static/companies/lasp.png" class="right resize">
-                <br>
-                <i class="tiny material-icons">location_on</i>Boulder, Colorado
-                <ul class="arrowlist">
-                    <li class="smallertext">Refactoring PHP backend application to an Angular library that parses and highlights files</li>
-                    <li class="smallertext">Managed team tasks using Agile / Scrum framework</li>
-                </ul>
-                <span class="tinytext">TypeScript    Angular    Bash    Agile</span>
-            </div>
-            <hr>
-            <div class="leftalign">
-                <span class="largetext">UCLA</span>
-                <span class="smalltext">| Big Data Analyst Intern</span>
-                <img src="./static/companies/ucla.png" class="right resize">
-                <br>
-                <i class="tiny material-icons">location_on</i>Los Angeles, California
-                <ul class="arrowlist">
-                    <li class="smallertext">Increased genetic discovery power by 46% compared to standard model typically used in genome-wide association
-                        studies by training complex phenotype machine learning model to better infer environmental factors</li>
-                    <li class="smallertext">Developed pipeline using linear regression and principal component analysis in R to infer environmental components</li>
-                    <li class="smallertext">Wrote shell scripts to interact with cluster server and parallelize data processing using job arrays</li>
-                    <li class="smallertext">Managed team tasks using Agile / Scrum framework</li>
-                </ul>
-                <span class="tinytext">Machine Learning    Data Science    Bioinformatics    R    Bash    Agile</span>
-            </div>
-            <hr>
-        </div>
-        <div class="section container" id="projects">
-            <h1 class="center">My Projects</h1>
-            <div class="row col-container">
-                <div class="project-col col m6 s12">
-                    <div class="card max-height">
-                        <div class="card-content center padding">
-                            <div class="card-title">Hinder</div>
-                            <p>Hinder is an app that matches you with people to argue with.</p>
-                            <p class='smallertext'>I worked on the front-end with Angular to create our web application. More specifically, I created some web pages and added routing between the web pages.</p>
-                            <p>Made during MLH Local Hack Day @ CU Boulder December 2019.</p>
-                            <br>
-                            <i class="material-icons">star</i>Best .com Domain Name<br>
-                            <a href="https://github.com/TiffanyVPhan/Hinder" class="btn">Github</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-col col m6 s12">
-                    <div class="card max-height">
-                        <div class="card-content center padding">
-                            <div class="card-title">Pancake Post</div>
-                            <p>Some information about the service including what it is and who it is for.</p>
-                            <br>
-                            <p>Made during HackCU @ CU Boulder February 2019.</p>
-                            <a href="https://github.com/TiffanyVPhan/Pancake-Post" class="btn">Github</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h2 class="center">More projects coming soon! Website is still under construction.</h2>
-        </div>
-
-        <!-- <div class="section center container" id="skills">
-            <h1>Skills</h1>
-        </div> -->
-    </div>
     
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Social Media</h5>
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/tiffanyvophan/">LinkedIn</a></li>
-                        <li><a href="https://github.com/TiffanyVPhan">Github</a></li>
-                    </ul>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright white-text">
-            <div class="container">
-                © <script>document.write(new Date().getFullYear())</script>
-            </div>
-        </div>
-    </footer>
-
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-        <script src="index.js"></script>  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="index.js"></script>  
         
     </body>
 </html>

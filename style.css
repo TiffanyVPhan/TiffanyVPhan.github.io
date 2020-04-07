@@ -5,139 +5,42 @@ html {
 header, main, footer {
     padding-left: 300px;
 }
-
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
+body {
+  font-family: "Noto Sans";
+  font-weight: bold;
 }
 
-p {
-  font-size: larger;
-}
-
-span {
-  white-space: pre;
-}
-
-nav.nav-center ul {
-  text-align: center;
-}
-nav.nav-center ul li {
-  display: inline;
-  float: none;
-}
-nav.nav-center ul li a {
-  display: inline-block;
-}
-
-.largetext {
-  font-size: 25px;
-}
-
-.smalltext {
-  font-size: 20px;
-}
-
-.smallertext {
-  font-size: 17px;
-}
-
-.tinytext {
-  font-size: 13px;
-}
-
-.resize {
-  width: 100px;
-  height: auto;
-}
-
-.resize {
-  width: auto;
-  height: 50px;
-}
-.leftalign {
-  text-align: left;
-  padding-left: 50px;
-}
-.shadow {
-  box-shadow: 3px 3px 5px black; 
-  width: 200px;
-}
-
-.button {
-  background:    linear-gradient(#e96443, #ff5f6d);
-  border-radius: 1px;
-  padding:       10px 19px;
-  color:         #FFF;
-  display:       inline-block;
-  font:          normal 20px/1 "Noto Sans", sans-serif;
-}
-
-.section {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.padding {
-  max-width: 700px;
-}
-
-.col-container {
-  display: flex; 
-  width: 100%; 
-}
-
-.project-col {
-  flex: 1;
-  padding: 16px;
-}
-
-.max-height {
-  height: 100%;
-}
-
-.card-content {
+.row-full {
+  width: 100vw;
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-left: -50vw;
+  height: 100px;
+  left: 50%;
+  border-top: 1.5px solid black;
 }
 
-.bgimg-1 {
-  background-image: url('./static/background.jpg');
-  min-height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.btn {
+  text-transform: none;
+  /* background-color: #f48fb1; */
 }
 
-.parallax {
-  background-color: black;
-}
-.full {
-    height: 100vh;
-  }
-
-.center {
-  text-align: center;
+.offset {
+  box-shadow: 0.4em 0.3em 0 0 #000;
 }
 
-.filter {
-    opacity: 0.75 !important;
+.square {
+  border-radius: 0!important;
 }
 
-ul.arrowlist > li::before {
-  content: "> ";
+.btn-layered {
+  border: 2px solid #000;
+  line-height: 1;
+  padding: 10px 26px;
+  transition: .2s ease-out;
+  -webkit-transition: .1s ease-out;
+  color: #000;
 }
 
-.parallax img {
-    width: 60%;
+.btn-layered:hover {
+  background-color: #f48fb1 !important;
 }
-
-@media only screen and (max-width : 992px) {
-header, main, footer {
-    padding-left: 0;
-}
-}
-        
