@@ -20,18 +20,8 @@ nav {
   border-bottom: 1.5px solid #000;
 }
 
-.bgimg-1 {
-  background-image: url('./static/background.jpg');
-  min-height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .btn {
   text-transform: none;
-  /* background-color: #f48fb1; */
 }
 
 .btn-layered {
