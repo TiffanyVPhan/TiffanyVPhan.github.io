@@ -24,7 +24,7 @@ ul.arrowlist > li::before {
   top: -20px;
 }
 .btn {
-  text-transform: none;s
+  text-transform: none;
 }
 .btn-layered {
   border: 2px solid black;
@@ -67,9 +67,6 @@ ul.arrowlist > li::before {
 .full {
   height: 100vh;
 }
-/* .section-top {
-  margin-top: 100vh;
-} */
 .offset {
   box-shadow: 0.4em 0.3em 0 0 #000;
 }
