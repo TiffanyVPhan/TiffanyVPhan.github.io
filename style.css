@@ -4,6 +4,10 @@ html {
 header, main, footer {
   padding-left: 300px;
 }
+h3 {
+  display: inline-block;
+  margin: 0;
+}
 body {
   font-family: "Noto Sans";
   font-weight: bold;
@@ -19,24 +23,32 @@ p {
 ul.arrowlist > li::before {
   content: "> ";
 }
+#content {
+  flex: 0 0 120px;
+}
 .anchor-point {
   position: relative;
-  top: -20px;
+  top: -50px;
 }
 .btn {
   text-transform: none;
-}
-.btn-layered {
   border: 2px solid black;
   line-height: 1;
-  padding: 10px 20px;
   transition: .2s ease-out;
   -webkit-transition: .1s ease-out;
   color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.btn-layered:hover {
+.btn:hover {
   background-color: #f48fb1 !important;
   transform: translate(2px, 2px);
+}
+.btn-weight {
+  font-weight: 700;
+  font-size: medium;
+  margin-top: 10px;
 }
 .card {
   background-color: white;
@@ -58,7 +70,9 @@ ul.arrowlist > li::before {
 .centered {
   position: relative;
   top: 50%;
-  left: 50%;
+  /* left: 50%; */
+  margin-left: 16.5%;
+  max-width: 400px;
   transform: translateY(-50%) 
 }
 .company-name {
@@ -76,6 +90,9 @@ ul.arrowlist > li::before {
 .resize {
   width: 150px;
   height: auto;
+}
+.resume-btn {
+  margin-top: 7px;
 }
 .shadow-circle{
   box-shadow: 3px 3px 5px black;

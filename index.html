@@ -22,8 +22,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="UTF-8">
-    <meta name="description" content="Template 2">
-    <meta name="keywords" content="Template 2">
+    <meta name="description" content="Tiffany Phan">
+    <meta name="keywords" content="Tiffany Phan">
     <meta name="author" content="Tiffany Phan">
 
     <title>Tiffany Phan</title>
@@ -38,7 +38,7 @@
                 <li><a href="#projects" class="black-text">Projects</a></li>
                 <li><a href="https://github.com/TiffanyVPhan" target="_blank" class="black-text">Github</a></li>
                 <li><a href="https://www.linkedin.com/in/tiffanyvophan/" target="_blank" class="black-text">LinkedIn</a></li>
-                <li><a href="mailto:tiffany.phan@colorado.edu" class="black-text btn btn-layered white offset">Hire Me</a></li>
+                <li><a href="mailto:tiffany.phan@colorado.edu" class="black-text btn white offset" style="margin-top: 13px;">Hire Me</a></li>
             </ul>
         </div>
     </nav>
@@ -49,15 +49,14 @@
         <li><a href="#projects" class="black-text">Projects</a></li>
         <li><a href="https://github.com/TiffanyVPhan" target="_blank" class="black-text">Github</a></li>
         <li><a href="https://www.linkedin.com/in/tiffanyvophan/" target="_blank" class="black-text">LinkedIn</a></li>
-        <li><a href="mailto:tiffany.phan@colorado.edu" class="black-text btn btn-layered white offset">Hire Me</a></li>
+        <li><a href="mailto:tiffany.phan@colorado.edu" class="black-text btn white offset">Hire Me</a></li>
     </ul>
 
     <!-- TODO: make website margins wider for mobile -->
-
-    <div class="row section container full">
-        <div class="col s2"></div>
-        <div class="col s5 centered">
+    <div class="section container full">
+        <div class="landing-margin centered">
             <img src="./static/tiff.jpg" class="circle responsive-img shadow-circle" width="140" height="140" alt="Tiffany Phan">
+            <br><br>
             <h3 class="title">Welcome!</h3>
             <p>My name is Tiffany Phan.</p>
             <p>I am a current junior at the University of Colorado at Boulder and am majoring in Computer Science. 
@@ -72,69 +71,64 @@
         <div class="col s8">
 
             <!-- TODO: add a button that links to my resume -->
-            <!-- <div class="row">
-                <h3 class="col s10 title">Experience</h3>
-                <btn class="col s2 black-text btn btn-layered white offset"></btn>
-            </div> -->
-            <h3 class="title">Experience</h3>
             <div class="row">
-                <div class="col s12">
-                    <div class="card offset">
-                        <div class="left-align">
-                            <span class="company-name">Visa</span>
-                            <span class="card-body">| Incoming Software Engineer Intern Summer 2020</span>
-                            <img src="./static/companies/visa.png" class="right resize">
-                            <br>
-                            <i class="tiny material-icons">location_on</i>Austin, Texas
-                            <br>
-                            <span>May 2020 - August 2020</span>
-                        </div>
+                <h3 class="col s10 title">Experience</h3>
+                <div id="content">
+                    <a href="./static/resume.pdf" class="col s2 black-text btn white offset btn-weight">Resume</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card offset">
+                    <div class="left-align">
+                        <span class="company-name">Visa</span>
+                        <span class="card-body">| Incoming Software Engineer Intern Summer 2020</span>
+                        <img src="./static/companies/visa.png" class="right resize">
+                        <br>
+                        <i class="tiny material-icons">location_on</i>Austin, Texas
+                        <br>
+                        <span>May 2020 - August 2020</span>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col s12">
-                    <div class="card offset">
-                        <div class="left-align">
-                            <span class="company-name">LASP</span>
-                            <span class="card-body">| Undergraduate Software Developer</span>
-                            <img src="./static/companies/lasp.png" class="right resize">
-                            <br>
-                            <i class="tiny material-icons">location_on</i>Boulder, Colorado
-                            <br>
-                            <span>October 2019 - February 2020</span>
-                            <ul class="arrowlist">
-                                <li class="card-body">Refactored PHP backend application to an Angular library that parses and highlights files</li>
-                                <li class="card-body">Managed team tasks using Agile / Scrum framework</li>
-                            </ul>
-                            <p>TypeScript, Angular, Bash, Agile</p>
-                        </div>
+                <div class="card offset">
+                    <div class="left-align">
+                        <span class="company-name">LASP</span>
+                        <span class="card-body">| Undergraduate Software Developer</span>
+                        <img src="./static/companies/lasp.png" class="right resize">
+                        <br>
+                        <i class="tiny material-icons">location_on</i>Boulder, Colorado
+                        <br>
+                        <span>October 2019 - February 2020</span>
+                        <ul class="arrowlist">
+                            <li class="card-body">Refactored PHP backend application to an Angular library that parses and highlights files</li>
+                            <li class="card-body">Managed team tasks using Agile / Scrum framework</li>
+                        </ul>
+                        <p>TypeScript, Angular, Bash, Agile</p>
                     </div>
                 </div>
             </div>
 
             <!-- TODO: make this a media query for responsive web design -->
             <div class="row">
-                <div class="col s12">
-                    <div class="card offset">
-                        <div class="left-align">
-                            <span class="company-name">UCLA</span>
-                            <span class="card-body">| Big Data Analyst Intern</span>
-                            <img src="./static/companies/ucla.png" class="right resize">
-                            <br>
-                            <i class="tiny material-icons">location_on</i>Los Angeles, California
-                            <br>
-                            <span>June 2019 - August 2019</span>
-                            <ul class="arrowlist card-body flow-text"> 
-                                <li>Increased genetic discovery power by 46% compared to standard genome-wide association
-                                    studies model by training complex phenotype machine learning model to better infer environmental factors</li>
-                                <li>Developed pipeline using linear regression and principal component analysis in R to infer environmental components</li>
-                                <li>Wrote shell scripts to interact with cluster server and parallelize data processing using job arrays</li>
-                                <li>Managed team tasks using Agile / Scrum framework</li>
-                            </ul>
-                            <p>Machine Learning, Data Science, Bioinformatics, R, Bash, Agile</p>
-                        </div>
+                <div class="card offset">
+                    <div class="left-align">
+                        <span class="company-name">UCLA</span>
+                        <span class="card-body">| Big Data Analyst Intern</span>
+                        <img src="./static/companies/ucla.png" class="right resize">
+                        <br>
+                        <i class="tiny material-icons">location_on</i>Los Angeles, California
+                        <br>
+                        <span>June 2019 - August 2019</span>
+                        <ul class="arrowlist card-body flow-text"> 
+                            <li>Increased genetic discovery power by 46% compared to standard genome-wide association
+                                studies model by training complex phenotype machine learning model to better infer environmental factors</li>
+                            <li>Developed pipeline using linear regression and principal component analysis in R to infer environmental components</li>
+                            <li>Wrote shell scripts to interact with cluster server and parallelize data processing using job arrays</li>
+                            <li>Managed team tasks using Agile / Scrum framework</li>
+                        </ul>
+                        <p>Machine Learning, Data Science, Bioinformatics, R, Bash, Agile</p>
                     </div>
                 </div>
             </div>
@@ -144,9 +138,8 @@
     <br>
 
     <div id="projects" class="anchor-point"></div>
-    <div class="row section container full">
-        <div class="col s2"></div>
-        <div class="col s8 centered">
+    <div class="section container full">
+        <div class="centered">
             <h3 class="title">Projects</h3>
             <p>Coming Soon!</p>
 
