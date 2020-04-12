@@ -23,9 +23,6 @@ p {
 ul.arrowlist > li::before {
   content: "> ";
 }
-#content {
-  flex: 0 0 120px;
-}
 .anchor-point {
   position: relative;
   top: -50px;
