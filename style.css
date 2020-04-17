@@ -67,16 +67,23 @@ ul.arrowlist > li::before {
 .centered {
   position: relative;
   top: 50%;
-  /* left: 50%; */
   margin-left: 16.5%;
-  max-width: 400px;
   transform: translateY(-50%) 
 }
+/* .projects-centered {
+  position: relative;
+  top: 50%;
+  margin-left: 16.5%;
+  transform: translateY(-50%) 
+} */
 .company-name {
   font-size: 25px;
 }
 .full {
   height: 100vh;
+}
+.landing-text {
+  max-width: 400px;
 }
 .offset {
   box-shadow: 0.4em 0.3em 0 0 #000;
@@ -97,4 +104,13 @@ ul.arrowlist > li::before {
 }
 .title {
   font-weight: 800;
+}
+.img-position {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100px;
+  height: auto;
+  margin: 20px 20px;
+  padding-left: 10px;
 }
