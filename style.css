@@ -26,6 +26,18 @@ p {
 ul.arrowlist > li::before {
   content: "> ";
 }
+div.modal.open {
+  font-family: "Noto Sans";
+  display: block;
+  opacity: 1;
+  transform: scaleX(1);
+  height: 100%;
+  background-color: white;
+  border: 3px solid black;
+  box-shadow: 0.4em 0.3em 0 0 #000;
+  color: black;
+  padding: 20px;
+}
 .material-icons {
   display: inline-flex;
   vertical-align: top;
@@ -53,18 +65,6 @@ ul.arrowlist > li::before {
   font-weight: 700;
   font-size: medium;
   margin-top: 37px;
-}
-.card {
-  background-color: white;
-  border: 2px solid black;
-  color: black;
-  padding: 20px;
-  width: 100%;
-  transition: .2s ease-out;
-  -webkit-transition: .1s ease-out;
-}
-.card-height {
-  height: 400px;
 }
 .centered {
   position: relative;
@@ -117,64 +117,43 @@ ul.arrowlist > li::before {
 .view-height {
   min-height: 150vh;
 }
-
-.grid-card {
+.card {
   background-color: white;
   border: 2px solid black;
   color: black;
   padding: 20px;
+}
+.project-card {
   cursor: pointer;
   transition: .2s ease-out;
   -webkit-transition: .1s ease-out;
 }
-
-.grid-card:hover {
+.project-card:hover {
   transform: translate(2px, 2px);
 }
-
 .grid-container {   
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  /* grid-template-columns: fit-content(350px); */
   grid-auto-rows: minmax(350, auto);
   grid-gap: 2em;
   justify-content: center;
 }
-
-.grid-experience-container {
-  display: grid;
+.grid-experience-column {
   grid-template-columns: repeat(1, minmax(350px, 1fr));
-  /* grid-template-columns: fit-content(668px); */
-  grid-auto-rows: minmax(350, auto);
-  grid-gap: 2em;
-  justify-content: center
 }
-
+.grid-project-column {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
 .grid-card-margin {
   margin-left: 23.5%;
   margin-right: 23.5%;
 }
-
 .project-title-margin {
   margin-left: 27.5%;
   margin-bottom: 2%;
 }
-
 .project-text {
   font-size: 16px;
   font-weight: 300;
-}
-div.modal.open {
-  font-family: "Noto Sans";
-  display: block;
-  opacity: 1;
-  transform: scaleX(1);
-  height: 100%;
-  background-color: white;
-  border: 3px solid black;
-  box-shadow: 0.4em 0.3em 0 0 #000;
-  color: black;
-  padding: 20px;
 }
 .parent {
   position: relative;
