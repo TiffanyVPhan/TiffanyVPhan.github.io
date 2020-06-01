@@ -1,3 +1,6 @@
+*:focus {
+  outline: none !important;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -23,6 +26,10 @@ p {
 ul.arrowlist > li::before {
   content: "> ";
 }
+.material-icons {
+  display: inline-flex;
+  vertical-align: top;
+}
 .anchor-point {
   position: relative;
   top: -50px;
@@ -45,14 +52,13 @@ ul.arrowlist > li::before {
 .btn-weight {
   font-weight: 700;
   font-size: medium;
-  margin-top: 10px;
+  margin-top: 37px;
 }
 .card {
   background-color: white;
   border: 2px solid black;
   color: black;
   padding: 20px;
-  cursor: pointer;
   width: 100%;
   transition: .2s ease-out;
   -webkit-transition: .1s ease-out;
@@ -60,22 +66,12 @@ ul.arrowlist > li::before {
 .card-height {
   height: 400px;
 }
-.card:hover {
-  background-color: #f48fb1 !important;
-  transform: translate(2px, 2px);
-}
 .centered {
   position: relative;
   top: 50%;
   margin-left: 16.5%;
   transform: translateY(-50%) 
 }
-/* .projects-centered {
-  position: relative;
-  top: 50%;
-  margin-left: 16.5%;
-  transform: translateY(-50%) 
-} */
 .name {
   font-size: 25px;
 }
@@ -96,7 +92,10 @@ ul.arrowlist > li::before {
   height: auto;
 }
 .resume-btn {
-  margin-top: 7px;
+  position: absolute;
+  display: inline-block;
+  background-color: white;
+  margin-left: 30%;
 }
 .shadow-circle{
   box-shadow: 3px 3px 5px black;
@@ -140,7 +139,15 @@ ul.arrowlist > li::before {
   grid-auto-rows: minmax(350, auto);
   grid-gap: 2em;
   justify-content: center;
+}
 
+.grid-experience-container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(350px, 1fr));
+  /* grid-template-columns: fit-content(668px); */
+  grid-auto-rows: minmax(350, auto);
+  grid-gap: 2em;
+  justify-content: center
 }
 
 .grid-card-margin {
@@ -151,4 +158,24 @@ ul.arrowlist > li::before {
 .project-title-margin {
   margin-left: 27.5%;
   margin-bottom: 2%;
+}
+
+.project-text {
+  font-size: 16px;
+  font-weight: 300;
+}
+div.modal.open {
+  font-family: "Noto Sans";
+  display: block;
+  opacity: 1;
+  transform: scaleX(1);
+  height: 100%;
+  background-color: white;
+  border: 3px solid black;
+  box-shadow: 0.4em 0.3em 0 0 #000;
+  color: black;
+  padding: 20px;
+}
+.parent {
+  position: relative;
 }

@@ -28,6 +28,12 @@
 
     <title>Tiffany Phan</title>
 </head>
+
+<!-- TO-DO: - open resume in new tab
+    - do not animate cards
+    - fix resume button
+-->
+
 <body>
     <nav class="nav-center white">
         <div class="nav-wrapper container">
@@ -66,87 +72,75 @@
     </div>
 
     <div id="experience" class="anchor-point"></div>
-    <div class="row section container view-height">
-        <div class="col s2"></div>
-        <div class="col s8">
-            <div class="row">
-                <h3 class="col s10 title">Experience</h3>
-                <a href="./static/resume.pdf" class="col s2 black-text btn white offset btn-weight">Resume</a>
+    <div class="view-height">
+        <div class="parent">
+            <div class="project-title-margin">
+                <h3 class="title">Experience</h3>
+                <!-- <div class="resume-btn btn btn-weight">Resume</div> -->
             </div>
-            <div class="row">
-                <div class="card offset">
-                    <div class="left-align">
-                        <span class="name">Visa</span>
-                        <span class="card-body">| Incoming Software Engineer Intern Summer 2020</span>
-                        <img src="./static/companies/visa.png" class="right resize">
-                        <br>
-                        <i class="tiny material-icons">location_on</i>Austin, Texas
-                        <br>
-                        <span>May 2020 - August 2020</span>
-                    </div>
-                </div>
+        </div>
+        
+        <div class="grid-experience-container grid-card-margin">
+
+            <div class="grid-card offset">
+                <span class="name">Visa</span>
+                <span class="card-body">| Incoming Software Engineer Intern Summer 2020</span>
+                <img src="./static/companies/visa.png" class="right resize">
+                <br>
+                <i class="tiny material-icons">location_on</i>Austin, Texas
+                <br>
+                <span>May 2020 - August 2020</span>
             </div>
 
-            <div class="row">
-                <div class="card offset">
-                    <div class="left-align">
-                        <span class="name">LASP</span>
-                        <span class="card-body">| Undergraduate Software Developer</span>
-                        <img src="./static/companies/lasp.png" class="right resize">
-                        <br>
-                        <i class="tiny material-icons">location_on</i>Boulder, Colorado
-                        <br>
-                        <span>October 2019 - February 2020</span>
-                        <ul class="arrowlist">
-                            <li class="card-body">Refactored PHP backend application to an Angular library that parses and highlights files</li>
-                            <li class="card-body">Managed team tasks using Agile / Scrum framework</li>
-                        </ul>
-                        <p>TypeScript, Angular, Bash, Agile</p>
-                    </div>
-                </div>
+            <div class="grid-card offset">
+                <span class="name">LASP</span>
+                <span class="card-body">| Undergraduate Software Developer</span>
+                <img src="./static/companies/lasp.png" class="right resize">
+                <br>
+                <i class="tiny material-icons">location_on</i>Boulder, Colorado
+                <br>
+                <span>October 2019 - February 2020</span>
+                <ul class="arrowlist">
+                    <li class="card-body">Refactored PHP backend application to an Angular library that parses and highlights files</li>
+                    <li class="card-body">Managed team tasks using Agile / Scrum framework</li>
+                </ul>
+                <p>TypeScript, Angular, Bash, Agile</p>
             </div>
-
-            <!-- TODO: make this a media query for responsive web design -->
-            <div class="row">
-                <div class="card offset">
-                    <div class="left-align">
-                        <span class="name">UCLA</span>
-                        <span class="card-body">| Big Data Analyst Intern</span>
-                        <img src="./static/companies/ucla.png" class="right resize">
-                        <br>
-                        <i class="tiny material-icons">location_on</i>Los Angeles, California
-                        <br>
-                        <span>June 2019 - August 2019</span>
-                        <ul class="arrowlist card-body flow-text"> 
-                            <li>Increased genetic discovery power by 46% compared to standard genome-wide association
-                                studies model by training complex phenotype machine learning model to better infer environmental factors</li>
-                            <li>Developed pipeline using linear regression and principal component analysis in R to infer environmental components</li>
-                            <li>Wrote shell scripts to interact with cluster server and parallelize data processing using job arrays</li>
-                            <li>Managed team tasks using Agile / Scrum framework</li>
-                        </ul>
-                        <p>Machine Learning, Data Science, Bioinformatics, R, Bash, Agile</p>
-                    </div>
-                </div>
+           
+            <div class="grid-card offset">
+                <span class="name">UCLA</span>
+                <span class="card-body">| Big Data Analyst Intern</span>
+                <img src="./static/companies/ucla.png" class="right resize">
+                <br>
+                <i class="tiny material-icons">location_on</i>Los Angeles, California
+                <br>
+                <span>June 2019 - August 2019</span>
+                <ul class="arrowlist card-body flow-text"> 
+                    <li>Increased genetic discovery power by 46% compared to standard genome-wide association
+                        studies model by training complex phenotype machine learning model to better infer environmental factors</li>
+                    <li>Developed pipeline using linear regression and principal component analysis in R to infer environmental components</li>
+                    <li>Wrote shell scripts to interact with cluster server and parallelize data processing using job arrays</li>
+                    <li>Managed team tasks using Agile / Scrum framework</li>
+                </ul>
+                <p>Machine Learning, Data Science, Bioinformatics, R, Bash, Agile</p>
             </div>
-            <div class="row">
-                <div class="card offset">
-                    <div class="left-align">
-                        <span class="name">University of Colorado at Boulder</span>
-                        <span class="card-body">| Intro to Computing Course Assistant</span>
-                        <!-- TODO: use flexbox to help align image -->
-                        <!-- <img src="./static/companies/cu.png" class="right img-position"> -->
-                        <br>
-                        <i class="tiny material-icons">location_on</i>Boulder, Colorado
-                        <br>
-                        <span>August 2018 - December 2018</span>
-                        <ul class="arrowlist card-body flow-text"> 
-                            <li>Assisted students in learning concepts, coding logic, algorithms, syntax, and homework in C++ during 3 lab sections
-                                (3.75 hrs/week) and at personal office hours (~4 hrs/week) with a total of 700 enrolled students in the introductory programming course
-                        </ul>
-                        <p>C++, Tutoring</p>
-                    </div>
-                </div>
+    
+            <div class="grid-card offset">
+                <span class="name">University of Colorado at Boulder</span>
+                <span class="card-body">| Intro to Computing Course Assistant</span>
+                <!-- TODO: use flexbox to help align image -->
+                <!-- <img src="./static/companies/cu.png" class="right img-position"> -->
+                <br>
+                <i class="tiny material-icons">location_on</i>Boulder, Colorado
+                <br>
+                <span>August 2018 - December 2018</span>
+                <ul class="arrowlist card-body flow-text"> 
+                    <li>Assisted students in learning concepts, coding logic, algorithms, syntax, and homework in C++ during 3 lab sections
+                        (3.75 hrs/week) and at personal office hours (~4 hrs/week) with a total of 700 enrolled students in the introductory programming course
+                </ul>
+                <p>C++, Tutoring</p>
             </div>
+           
         </div>
     </div>
     
@@ -161,34 +155,39 @@
             <h3 class="title">Projects</h3>
             <p>Currently Under Construction!</p>
         </div>
-        <!-- TODO: GRID CONTAINER -->
+
         <div class="grid-container grid-card-margin">
-            <div class="grid-card offset modal-trigger" href="#modal1">
-                <span class="name">Virtual Musuem</span>
-                <br>
-                <span>Created at T9Hacks 2020.</span>
-                <br>
-                <i class="material-icons">star</i>
-                <span>Won "Best Creative Technology" Award.</span>
-                <div id="modal1" class="modal">
-                    <div class="modal-content">
-                        <h4>Virtual Musuem</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit officiis velit necessitatibus quas dignissimos repudiandae, labore beatae quo minus odio quae doloremque? Quae dignissimos, inventore quisquam facere cupiditate quidem et.</p>
-                    </div>
+            <a href="#modal1" class="modal-trigger">
+                <div class="grid-card offset">
+                    <span class="name">Virtual Musuem</span>
+                    <br>
+                    <!-- <span>Created at T9Hacks 2020.</span> -->
+                    <br>
+                    <i class="material-icons">star</i>
+                    <span class="project-text">Won "Best Creative Technology" Award at T9Hacks 2020.</span>
                 </div>
-            </div>
-            <div class="grid-card offset">
-                <span class="name">Pancake Post</span>
-                </br>
-                <span>Created at HackCU 2019.</span>
-            </div>
+            </a>
+            <a href="#modal2" class="modal-trigger">
+                <div class="grid-card offset">
+                    <span class="name">PicSure</span>
+                    </br>
+                    <span></span>
+                </div>
+            </a>
+            <a href="#modal3" class="modal-trigger">
+                <div class="grid-card offset">
+                    <span class="name">Pancake Post</span>
+                    </br>
+                    <span class="project-text">Created at HackCU 2019.</span>
+                </div>
+            </a>
             <div class="grid-card offset">
                 <span class="name">Face Filter</span>
             </div>
             <div class="grid-card offset">
                 <span class="name">Hinder</span>
                 <br>
-                <span>Created at LocalHackDay 2019.</span>
+                <span class="project-text">Created at LocalHackDay 2019.</span>
             </div>
             <div class="grid-card offset">
                 <span class="name">Color Climb</span>
@@ -199,10 +198,8 @@
             <div class="grid-card offset">
                 <span class="name">MyCUEverything</span>
                 <br>
-                <span>Created at T9Hacks 2019.</span>
-                <br>
                 <i class="material-icons">star</i>
-                <span>Won "Best Community Hack" Award.</span>
+                <span class="project-text">Won "Best Community Hack" Award at T9Hacks 2019.</span>
             </div>
             <div class="grid-card offset">
                 <span class="name">BitW1se</span>
@@ -211,9 +208,39 @@
         </div>
         
     </div>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Virtual Musuem</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit officiis velit necessitatibus quas dignissimos repudiandae, labore beatae quo minus odio quae doloremque? Quae dignissimos, inventore quisquam facere cupiditate quidem et.</p>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Virtual Musuem</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit officiis velit necessitatibus quas dignissimos repudiandae, labore beatae quo minus odio quae doloremque? Quae dignissimos, inventore quisquam facere cupiditate quidem et.</p>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <h4>Virtual Musuem</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit officiis velit necessitatibus quas dignissimos repudiandae, labore beatae quo minus odio quae doloremque? Quae dignissimos, inventore quisquam facere cupiditate quidem et.</p>
+        </div>
+    </div>
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <h4>Virtual Musuem</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit officiis velit necessitatibus quas dignissimos repudiandae, labore beatae quo minus odio quae doloremque? Quae dignissimos, inventore quisquam facere cupiditate quidem et.</p>
+        </div>
+    </div>
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <h4>Virtual Musuem</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit officiis velit necessitatibus quas dignissimos repudiandae, labore beatae quo minus odio quae doloremque? Quae dignissimos, inventore quisquam facere cupiditate quidem et.</p>
+        </div>
+    </div>
         
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="index.js"></script>  
         
     </body>
