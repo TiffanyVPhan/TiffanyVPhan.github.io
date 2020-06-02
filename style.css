@@ -46,7 +46,11 @@ div.modal.open {
   position: relative;
   top: -50px;
 }
-.btn {
+.resume-btn {
+  height: auto;
+  width: 100px;
+  padding: 10px 16px 10px 16px;
+  margin-top: 13px !important;
   text-transform: none;
   border: 2px solid black;
   line-height: 1;
@@ -57,11 +61,11 @@ div.modal.open {
   justify-content: center;
   align-items: center;
 }
-.btn:hover {
+.resume-btn:hover {
   background-color: #f48fb1 !important;
   transform: translate(2px, 2px);
 }
-.btn-weight {
+.resume-btn-weight {
   font-weight: 700;
   font-size: medium;
   margin-top: 37px;
@@ -157,4 +161,7 @@ div.modal.open {
 }
 .parent {
   position: relative;
+}
+.project-btn {
+  margin-right: 10px;
 }
