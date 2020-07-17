@@ -1,5 +1,141 @@
-.fit {
-  width:100%;
-  height:auto;
-  max-height:100%;
+.header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
 }
+
+.subheader {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.small-body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.quote {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.block {
+  display: block;
+}
+
+.title {
+  color: white;
+  opacity: 0; 
+  animation: fadein 1s; 
+  animation-delay:1s; 
+  -webkit-animation-fill-mode: forwards; 
+  -moz-animation-fill-mode: forwards; 
+  -ms-animation-fill-mode: forwards; 
+  animation-fill-mode: forwards; 
+}
+
+@keyframes fadein { 
+  from { opacity: 0; } 
+  to { opacity: 1; } 
+}
+
+.body.title {
+  line-height: 1.8;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered2 {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.panel {
+  height: 150vh;
+  width: 100%;
+}
+
+.bg-1 {
+  background-image: url('static/bg1.jpg');
+}
+
+.bg-2 {
+  background-color: #363636;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.bg-2.show {
+  opacity: 1;
+}
+
+.arrow {
+	width: 60px;
+	height: 82px;
+	position: fixed;
+	left: 49%;
+	margin-left: 0px;
+	bottom: 5%;
+  z-index:999;
+}
+
+.arrow path {
+	stroke: white;
+	stroke-width: 2px;
+	fill: transparent;	
+	animation: down 2s infinite;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.intro-wrapper {
+  margin: 5%;
+}
+
+@keyframes down{
+  0% { opacity:0 }
+  25% { opacity:1 }
+  75% { opacity:0 }
+  100% { opacity:0 }
+}
+
+.arrow path.a1{	animation-delay:-1s; }
+.arrow path.a2{	animation-delay:-.5s; }
+.arrow path.a3{	animation-delay:0s; }
