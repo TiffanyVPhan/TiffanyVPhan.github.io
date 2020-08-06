@@ -1,3 +1,9 @@
+:root {
+    --main-background: #fafafa;
+    --highlight: #64FFDA;
+    --button: #FF6489;
+  }  
+
 *:focus {
     outline: none !important;
 }

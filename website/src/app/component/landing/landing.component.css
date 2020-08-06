@@ -1,0 +1,23 @@
+.bg {
+    background-color: var(--main-background);
+    height: 100vh;
+}
+
+.intro-container {
+    margin-top: 5%;
+}
+
+.intro-text {
+    line-height: 1.6;
+}
+
+.highlight {
+    position: relative;
+    background-image: linear-gradient(to right, transparent 50%, var(--highlight) 50%);
+    background-origin: 0;
+    background-size: 200% 30%;
+    background-repeat: repeat-x;
+    background-position: -100% 80%;
+    transition: background-position 0.8s ease-out;
+    transition-delay: 0.5s;
+}

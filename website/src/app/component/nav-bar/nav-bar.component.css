@@ -1,5 +1,6 @@
 nav {
     box-shadow: none;
+    background-color: var(--main-background);
     margin-top: 1%;
 }
 
@@ -14,7 +15,7 @@ a:hover {
 
 .resume-btn {
     height: auto;
-    width: 100px;
+    width: 115px;
     padding: 10px 16px 10px 16px;
     margin-top: 13px !important;
     text-transform: none;
@@ -29,7 +30,7 @@ a:hover {
 }
 
 .resume-btn:hover {
-    background-color: #f48fb1 !important;
+    background-color: var(--button) !important;
     transform: translate(2px, 2px);
 }
 
