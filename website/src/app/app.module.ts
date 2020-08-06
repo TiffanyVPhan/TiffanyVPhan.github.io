@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './component/nav-bar/nav-bar.component';
 import { LandingComponent } from './component/landing/landing.component';
 import { CardComponent } from './component/card/card.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 const routes: Routes = [
   {
@@ -19,7 +20,8 @@ const routes: Routes = [
     AppComponent,
     NavBarComponent,
     LandingComponent,
-    CardComponent
+    CardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

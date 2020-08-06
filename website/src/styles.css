@@ -1,7 +1,7 @@
 :root {
     --main-background: #fafafa;
     --highlight: #64FFDA;
-    --button: #FF6489;
+    --pink: #FF6489;
   }  
 
 *:focus {
@@ -30,13 +30,13 @@ a:hover {
 .body {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: normal;
 }
   
 .small-body {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
-    font-weight: normal;
+    font-weight: 300;
     color: rgba(0, 0, 0, 0.5);
 }
   
@@ -45,3 +45,14 @@ a:hover {
     font-size: 36px;
     font-weight: 300;
 }
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+      

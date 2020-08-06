@@ -21,3 +21,12 @@
     transition: background-position 0.8s ease-out;
     transition-delay: 0.5s;
 }
+
+.text-color {
+    color: var(--pink);
+}
+
+.desc {
+    font-size: 16px;
+    font-weight: normal;
+}
