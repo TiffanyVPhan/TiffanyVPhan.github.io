@@ -1,0 +1,41 @@
+*:focus {
+    outline: none !important;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  
+.subheader {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+  
+.body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+  
+.small-body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.5);
+}
+  
+.quote {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+}
