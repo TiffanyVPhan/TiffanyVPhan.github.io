@@ -1,7 +1,14 @@
 <nav>
     <div class="nav-container">
         <a href="" data-target="mobile-menu" class="sidenav-trigger brand-logo right"><i class="material-icons black-text">menu</i></a>
-        <a href="" class="black-text subheader left"><b>Tiffany Phan</b></a>
+        
+        <a *ngIf="path === '/'" href="" class="black-text subheader left">
+            <b>Tiffany Phan</b>
+        </a>
+
+        <a *ngIf="path === '/resume' || path === '/about'" href="" class="black-text subheader left">
+            <i class="material-icons">arrow_back</i>
+        </a>
         
         <ul class="right hide-on-med-and-down">
             <li><a href="/" [ngClass]="highlightPortfolio ? ['active'] : ['']" class="black-text link">Portfolio</a></li>

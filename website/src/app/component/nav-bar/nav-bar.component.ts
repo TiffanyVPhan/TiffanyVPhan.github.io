@@ -11,13 +11,14 @@ export class NavBarComponent {
     public tabs: string[] = ['Portfolio', 'Other Projects', 'Resume', 'About', 'Hire Me'];
 
     constructor(public router: Router, public route: ActivatedRoute) {
+        console.log(window.location.pathname);
     }
 
     get highlightPortfolio(): boolean {
-        // Angular routing hecking sucks. Why is this a thing
-        // https://medium.com/@tomastrajan/how-to-get-route-path-parameters-in-non-routed-angular-components-32fc90d9cb52
-        // Just be lazy and do this:
         return location.pathname === '/';
-        // <3 uwu
+    }
+
+    get path(): string {
+        return window.location.pathname;
     }
 }
