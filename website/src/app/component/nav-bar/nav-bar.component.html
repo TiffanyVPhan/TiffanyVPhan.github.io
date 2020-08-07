@@ -2,8 +2,9 @@
     <div class="nav-container">
         <a href="" data-target="mobile-menu" class="sidenav-trigger brand-logo right"><i class="material-icons black-text">menu</i></a>
         <a href="" class="black-text subheader left"><b>Tiffany Phan</b></a>
+        
         <ul class="right hide-on-med-and-down">
-            <li><a href="#experience" [ngClass]="highlightPortfolio ? ['active'] : ['']" class="black-text link">Portfolio</a></li>
+            <li><a href="/" [ngClass]="highlightPortfolio ? ['active'] : ['']" class="black-text link">Portfolio</a></li>
             <li><a [routerLink]="['/resume']" routerLinkActive="active" class="black-text link">Resume</a></li>
             <li><a [routerLink]="['/about']" routerLinkActive="active" class="black-text link">About</a></li>
             <li><a href="mailto:tiffany.phan@colorado.edu" class="black-text btn resume-btn white offset">Contact Me</a></li>

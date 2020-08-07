@@ -30,7 +30,7 @@ a:hover {
 }
 
 .resume-btn:hover {
-    background-color: var(--button) !important;
+    background-color: var(--pink) !important;
     transform: translate(2px, 2px);
 }
 
