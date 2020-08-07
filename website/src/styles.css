@@ -2,7 +2,7 @@
     --main-background: #fafafa;
     --highlight: #64FFDA;
     --pink: #FF6489;
-  }  
+}  
 
 *:focus {
     outline: none !important;
@@ -11,10 +11,20 @@
 a,
 a:visited,
 a:hover {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+    
 .header {
     font-family: 'Open Sans', sans-serif;
     font-size: 36px;
@@ -46,13 +56,6 @@ a:hover {
     font-weight: 300;
 }
 
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+.top-margin {
+    margin-top: 5%;
 }
-
-main {
-    flex: 1 0 auto;
-}
-      

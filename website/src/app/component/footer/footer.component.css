@@ -5,6 +5,8 @@ img {
 footer {
     text-align: center;
     background-color: var(--main-background);
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .center {

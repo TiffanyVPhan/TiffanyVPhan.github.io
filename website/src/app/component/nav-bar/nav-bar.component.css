@@ -56,4 +56,15 @@ a:hover {
 .link:hover::after {    
     width: 100%;
 }
-  
+
+.active {
+    font-weight: bold;
+}
+
+.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #000;
+}

@@ -8,15 +8,23 @@ import { LandingComponent } from './component/landing/landing.component';
 import { CardComponent } from './component/card/card.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { AboutComponent } from './component/about/about.component';
+import { ResumeComponent } from './component/resume/resume.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: LandingComponent
-  },
-  {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'resume',
+    component: ResumeComponent
+  },
+  {
+    path: '',
+    component: LandingComponent,
+    data: {
+      highlightPortfolio: true,
+    },
   }
 ];
 
@@ -26,7 +34,8 @@ const routes: Routes = [
     NavBarComponent,
     LandingComponent,
     CardComponent,
-    FooterComponent
+    FooterComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
