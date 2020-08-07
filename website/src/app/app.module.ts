@@ -7,11 +7,16 @@ import { NavBarComponent } from './component/nav-bar/nav-bar.component';
 import { LandingComponent } from './component/landing/landing.component';
 import { CardComponent } from './component/card/card.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { AboutComponent } from './component/about/about.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: AppComponent
+    component: LandingComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
   }
 ];
 
