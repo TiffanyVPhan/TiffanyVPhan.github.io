@@ -1,0 +1,8 @@
+.fader {
+    transition: ease-out;
+}
+
+.fader.start {
+    transform: translateY(100px);
+    opacity: 0;
+}

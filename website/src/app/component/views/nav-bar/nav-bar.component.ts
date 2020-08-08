@@ -14,7 +14,7 @@ export class NavBarComponent {
         console.log(window.location.pathname);
     }
 
-    get highlightPortfolio(): boolean {
+    get onHomePage(): boolean {
         return location.pathname === '/';
     }
 

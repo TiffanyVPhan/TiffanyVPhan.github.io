@@ -3,12 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './component/nav-bar/nav-bar.component';
-import { LandingComponent } from './component/landing/landing.component';
-import { CardComponent } from './component/card/card.component';
-import { FooterComponent } from './component/footer/footer.component';
-import { AboutComponent } from './component/about/about.component';
-import { ResumeComponent } from './component/resume/resume.component';
+import { CardComponent } from './component/helper/fade-in/card/card.component';
+import { NavBarComponent } from './component/views/nav-bar/nav-bar.component';
+import { LandingComponent } from './component/views/landing/landing.component';
+import { FooterComponent } from './component/views/footer/footer.component';
+import { AboutComponent } from './component/views/about/about.component';
+import { ResumeComponent } from './component/views/resume/resume.component';
+import { FadeInComponent } from './component/helper/fade-in/fade-in.component';
 
 const routes: Routes = [
   {
@@ -35,7 +36,8 @@ const routes: Routes = [
     LandingComponent,
     CardComponent,
     FooterComponent,
-    ResumeComponent
+    ResumeComponent,
+    FadeInComponent
   ],
   imports: [
     BrowserModule,

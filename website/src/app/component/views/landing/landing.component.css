@@ -5,6 +5,12 @@
 
 .intro-text {
     line-height: 1.6;
+    transition: 0.75s ease-out;
+}
+
+.intro-text.start {
+    transform: translateY(100px);
+    opacity: 0;
 }
 
 .highlight {
