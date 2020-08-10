@@ -1,3 +1,7 @@
+blockquote {
+    border-color: black;
+}
+
 .side-box {
     border-left: 1px solid black;
     margin-top: 50px;
