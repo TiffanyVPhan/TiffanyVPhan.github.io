@@ -1,0 +1,52 @@
+:root {
+    --main-background: #fafafa;
+    --highlight: #64FFDA;
+    --pink: #FF6489;
+}  
+
+*:focus {
+    outline: none !important;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: var(--main-background);
+}
+
+main {
+    flex: 1 0 auto;
+}
+    
+.header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  
+.subheader {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+  
+.body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+  
+.small-body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,61 @@
+.bg {
+    background-color: var(--main-background);
+    height: 100vh;
+}
+
+.intro-text {
+    line-height: 1.6;
+    transition: 0.75s ease-out;
+}
+
+.intro-text.start {
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.highlight {
+    position: relative;
+    background-image: linear-gradient(to right, transparent 50%, var(--highlight) 50%);
+    background-origin: 0;
+    background-size: 200% 30%;
+    background-repeat: repeat-x;
+    background-position: -100% 80%;
+    transition: background-position 0.8s ease-out;
+    transition-delay: 0.5s;
+}
+
+.text-color {
+    color: var(--pink);
+}
+
+.desc {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.top-margin {
+    margin-top: 10%;
+}
+
+.wave {
+    display: inline-block;
+    cursor: grab;
+    animation-duration: 0.2s;
+    animation-name: wave;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: 4;
+}
+
+.wave:hover {
+    animation-iteration-count: infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+}
