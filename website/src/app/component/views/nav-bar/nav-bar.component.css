@@ -1,7 +1,18 @@
 nav {
     box-shadow: none;
     background-color: var(--main-background);
-    margin-top: 1%;
+    padding-top: 1%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar {
+    top: 0;
+    transition: top 0.5s ease;
+}
+
+.navbar-hide {
+    top: -100px;
 }
 
 a:hover {

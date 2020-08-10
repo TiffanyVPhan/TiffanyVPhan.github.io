@@ -33,14 +33,6 @@
     font-weight: normal;
 }
 
-.droplet {
-    /* height: 50px;
-    width: 50px; */
-    /* margin-right: 10px; */
-    transition: all 3s;
-    transition-timing: ease-in-out;
-}
-
-.droplet:hover {
-    transform: rotate(1080deg);
+.top-margin {
+    margin-top: 10%;
 }

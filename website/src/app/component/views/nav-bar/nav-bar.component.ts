@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
-import { filter } from 'rxjs/operators';
+import { ActivatedRoute, Router } from '@angular/router';
+
 @Component({
     selector: 'app-nav-bar',
     templateUrl: './nav-bar.component.html',
@@ -9,6 +9,7 @@ import { filter } from 'rxjs/operators';
 export class NavBarComponent {
 
     public tabs: string[] = ['Portfolio', 'Other Projects', 'Resume', 'About', 'Hire Me'];
+    public navb: string[] = ['navbar'];
 
     constructor(public router: Router, public route: ActivatedRoute) {
         console.log(window.location.pathname);
@@ -20,5 +21,17 @@ export class NavBarComponent {
 
     get path(): string {
         return window.location.pathname;
+    }
+
+    setNavPos(): void {
+        let prevScrollPos = window.pageYOffset;
+        window.onscroll = (() => {
+            const currentScrollPos = window.pageYOffset;
+            if (prevScrollPos > currentScrollPos) {
+                this.navb.splice(1, 1);
+            } else {
+                this.navb.push('navbar-hide');
+            }
+        });
     }
 }
