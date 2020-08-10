@@ -10,7 +10,6 @@ import { FooterComponent } from './component/views/footer/footer.component';
 import { AboutComponent } from './component/views/about/about.component';
 import { ResumeComponent } from './component/views/resume/resume.component';
 import { FadeInComponent } from './component/helper/fade-in/fade-in.component';
-import { NavScrollDirective } from './directive/nav-scroll.directive';
 
 const routes: Routes = [
   {
@@ -38,8 +37,7 @@ const routes: Routes = [
     CardComponent,
     FooterComponent,
     ResumeComponent,
-    FadeInComponent,
-    NavScrollDirective
+    FadeInComponent
   ],
   imports: [
     BrowserModule,
