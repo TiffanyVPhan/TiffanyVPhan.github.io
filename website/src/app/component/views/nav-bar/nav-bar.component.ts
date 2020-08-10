@@ -30,7 +30,9 @@ export class NavBarComponent {
             if (prevScrollPos > currentScrollPos) {
                 this.navb.splice(1, 1);
             } else {
-                this.navb.push('navbar-hide');
+                if (currentScrollPos > 60) {
+                    this.navb.push('navbar-hide');
+                }
             }
         });
     }
