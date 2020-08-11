@@ -11,6 +11,10 @@ nav {
     transition: top 0.5s ease;
 }
 
+#mobile-menu {
+    background-color: var(--main-background);
+}
+
 .navbar-hide {
     top: -100px;
 }
@@ -91,6 +95,6 @@ a:hover {
 
 @media (min-width: 415px) and (max-width: 991px) {
     .sidenav {
-        margin-top: 64px
+        margin-top: 64px;
     }
 }
