@@ -79,3 +79,18 @@ a:hover {
     height: 5px;
     background: #000;
 }
+
+@media (max-width: 600px) {
+    .mobile {
+        margin-left: 5%;
+    }
+    .sidenav {
+        margin-top: 56px;
+    }
+}
+
+@media (min-width: 415px) and (max-width: 991px) {
+    .sidenav {
+        margin-top: 64px
+    }
+}

@@ -23,8 +23,8 @@ blockquote {
 }
 
 .cropped {
-    width: 150px; /* width of container */
-    height: 150px; /* height of container */
+    width: 150px;
+    height: 150px;
     overflow: hidden;
     margin-top: 5%;
 }

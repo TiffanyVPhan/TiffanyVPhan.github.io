@@ -2,11 +2,11 @@
     <div class="nav-container">
         <a [routerLink]="['/']"  data-target="mobile-menu" class="sidenav-trigger brand-logo right"><i class="material-icons black-text">menu</i></a>
         
-        <a *ngIf="onHomePage" [routerLink]="['/']" class="black-text subheader left">
+        <a *ngIf="onHomePage" [routerLink]="['/']" class="mobile black-text subheader left">
             <b>Tiffany Phan</b>
         </a>
 
-        <a *ngIf="path === '/resume' || path === '/about'" [routerLink]="['/']"  class="black-text subheader left">
+        <a *ngIf="path === '/resume' || path === '/about'" [routerLink]="['/']"  class="black-text subheader left mobile">
             <i class="material-icons">arrow_back</i>
         </a>
         
@@ -21,11 +21,8 @@
 
 <!-- TODO: look into js init materialize -->
 <ul class="sidenav" id="mobile-menu">
-    <h3 class="center">Navigation</h3>
-    <li><a href="" class="black-text">Home</a></li>
-    <li><a href="experience" class="black-text">Experience</a></li>
-    <li><a href="projects" class="black-text">Projects</a></li>
-    <li><a href="https://github.com/TiffanyVPhan" target="_blank" class="black-text">Github</a></li>
-    <li><a href="https://www.linkedin.com/in/tiffanyvophan/" target="_blank" class="black-text">LinkedIn</a></li>
-    <li><a href="mailto:tiffany.phan@colorado.edu" class="black-text btn resume-btn white offset">Hire Me</a></li>
+    <li><a [routerLink]="['/']" [ngClass]="onHomePage ? ['active'] : ['']" class="black-text link">Portfolio</a></li>
+    <li><a [routerLink]="['/resume']" routerLinkActive="active" class="black-text link">Resume</a></li>
+    <li><a [routerLink]="['/about']" routerLinkActive="active" class="black-text link">About</a></li>
+    <li><a href="mailto:tiffany.phan@colorado.edu" class="black-text btn resume-btn white offset">Contact Me</a></li>
 </ul>

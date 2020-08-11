@@ -1,18 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
+declare var M: any;
+
 @Component({
     selector: 'app-nav-bar',
     templateUrl: './nav-bar.component.html',
     styleUrls: ['./nav-bar.component.css']
 })
-export class NavBarComponent {
+export class NavBarComponent implements OnInit{
 
     public tabs: string[] = ['Portfolio', 'Other Projects', 'Resume', 'About', 'Hire Me'];
     public navb: string[] = ['navbar'];
 
     constructor(public router: Router, public route: ActivatedRoute) {
-        console.log(window.location.pathname);
+    }
+    ngOnInit() {}
+
+    ngAfterViewInit() {
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {});
+          });
     }
 
     get onHomePage(): boolean {

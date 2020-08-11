@@ -37,7 +37,8 @@ const routes: Routes = [
     CardComponent,
     FooterComponent,
     ResumeComponent,
-    FadeInComponent
+    FadeInComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
