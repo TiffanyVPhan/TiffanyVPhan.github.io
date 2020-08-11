@@ -51,6 +51,14 @@
     animation-iteration-count: infinite;
 }
 
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 2rem;
+    margin: auto;
+}
+
 @keyframes wave {
     0% {
         transform: rotate(0deg);
