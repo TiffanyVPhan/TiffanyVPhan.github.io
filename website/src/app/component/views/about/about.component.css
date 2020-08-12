@@ -47,6 +47,10 @@ blockquote {
     font-weight: 500;
 }
 
+.links {
+    color: var(--pink);
+}
+
 @media (min-width: 0px) and (max-width: 991px) {
     .cropped {
         margin-left: auto;
