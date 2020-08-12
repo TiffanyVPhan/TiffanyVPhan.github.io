@@ -12,7 +12,7 @@
 
 .image-class {
     height: 250px;
-    width: 375px;
+    width: 350px;
     background-color: red;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .title-class {
-
+    
 }
 
 .tech-class {
@@ -33,13 +33,31 @@
 .desc-class {
 
 }
-/* Galaxy Fold & iPhone 5/SE */
-@media (min-width: 0px) and (max-width: 320px) {
+/* Galaxy Fold & iPhone 5/SE & Moto G4*/
+@media (min-width: 0px) and (max-width: 360px) {
     .card {
         height: 300px;
     }
+
+    .image-class {
+        width: 250px;
+        height: 175px;
+    }
+
+    .image-class /deep/ img {
+        height: 175px;
+    }
+
 }
 
 /* Two card sizes
-320px x 380px
+350px x 380px
 250px x 300px */
+
+/* Image sizes
+350px x 250px
+250px x 175px */
+/* 
+1.14:1 aspect ratio for 350px x 250px images
+    brightness: -80
+*/

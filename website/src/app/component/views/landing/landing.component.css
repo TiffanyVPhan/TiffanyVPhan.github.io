@@ -51,6 +51,10 @@
     animation-iteration-count: infinite;
 }
 
+.center-grid {
+    display: flex;
+    justify-content: center;
+}
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -77,17 +81,17 @@
 
 @media (min-width: 1037px) {
     .card-grid {
-        grid-template-columns: repeat(auto-fill, 375px);
+        grid-template-columns: repeat(auto-fill, 350px);
     }
 }
 
-@media (min-width: 740px) and (max-width: 1036px) {
+@media (min-width: 930px) and (max-width: 1036px) {
     .card-grid {
-        grid-template-columns: repeat(2, 320px);
+        grid-template-columns: repeat(2, 350px);
     }
 }
 
-@media (min-width: 0px) and (max-width: 739px) {
+@media (min-width: 0px) and (max-width: 929px) {
     .header {
         font-size: 20px;
     }
@@ -98,12 +102,12 @@
         font-size: 16px;
     }
     .card-grid {
-        grid-template-columns: repeat(auto-fill, 320px);
+        grid-template-columns: repeat(auto-fill, 350px);
     }
 }
 
 /* Galaxy Fold & iPhone 5/SE */
-@media (min-width: 0px) and (max-width: 320px) {
+@media (min-width: 0px) and (max-width: 360px) {
     .card-grid {
         grid-template-columns: repeat(auto-fill, 250px);
     }
