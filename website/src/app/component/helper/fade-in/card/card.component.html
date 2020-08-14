@@ -1,9 +1,6 @@
 <div class="card">
-    <div class="image-class">
-        <ng-content select="[image]"></ng-content>
-    </div>
-    <div class="title-class">
-        <ng-content select="[title]"></ng-content>
+    <div class="image-class" [ngStyle]="{ backgroundImage: bgImg }">
+        <h2 class="header title-class center-align">{{ title }}</h2>
     </div>
     <div class="tech-class">
         <ng-content select="[tech]"></ng-content>
