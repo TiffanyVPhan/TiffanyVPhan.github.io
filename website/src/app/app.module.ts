@@ -10,6 +10,7 @@ import { FooterComponent } from './component/views/footer/footer.component';
 import { AboutComponent } from './component/views/about/about.component';
 import { ResumeComponent } from './component/views/resume/resume.component';
 import { FadeInComponent } from './component/helper/fade-in/fade-in.component';
+import { ContactComponent } from './component/views/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path: 'resume',
     component: ResumeComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
   },
   {
     path: '',
@@ -38,7 +43,8 @@ const routes: Routes = [
     FooterComponent,
     ResumeComponent,
     FadeInComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

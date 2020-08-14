@@ -1,0 +1,16 @@
+.top-margin {
+    margin-top: 10%;
+}
+
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field #textarea1:focus + label {
+    color: var(--pink);
+}
+
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field #textarea1:focus {
+    border-bottom: 1px solid var(--pink);
+    box-shadow: 0 1px 0 0 var(--pink);
+}

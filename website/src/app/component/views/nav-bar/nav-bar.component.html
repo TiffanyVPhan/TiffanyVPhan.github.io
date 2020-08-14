@@ -14,7 +14,7 @@
             <li><a [routerLink]="['/']" [ngClass]="onHomePage ? ['active'] : ['']" class="black-text link">Portfolio</a></li>
             <li><a [routerLink]="['/resume']" routerLinkActive="active" class="black-text link">Resume</a></li>
             <li><a [routerLink]="['/about']" routerLinkActive="active" class="black-text link">About</a></li>
-            <li><a href="mailto:tiffany.phan@colorado.edu" class="black-text btn resume-btn white offset">Contact Me</a></li>
+            <li><a [routerLink]="['contact']" class="black-text btn resume-btn white offset">Contact Me</a></li>
         </ul>
     </div>
 </nav>
