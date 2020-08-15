@@ -14,8 +14,6 @@ export class ContactComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    $('#textarea1').val('New Text');
-    M.textareaAutoResize($('#textarea1'));
   }
 
 }

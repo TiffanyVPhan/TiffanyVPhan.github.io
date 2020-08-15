@@ -1,5 +1,5 @@
 .top-margin {
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 .input-field input[type=text]:focus + label,
@@ -13,4 +13,13 @@
 .input-field #textarea1:focus {
     border-bottom: 1px solid var(--pink);
     box-shadow: 0 1px 0 0 var(--pink);
+}
+
+.button {
+    color: var(--pink);
+}
+
+.email-container {
+    margin-left: 25%;
+    margin-right: 25%;
 }
