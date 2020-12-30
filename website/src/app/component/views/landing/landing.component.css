@@ -1,3 +1,7 @@
+p span {
+    display: block;
+}
+
 .vh {
     height: 100vh;
 }
