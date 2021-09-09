@@ -1,7 +1,7 @@
 <nav [ngClass]="navb" [ngStyle]="setNavPos()">
     <div class="nav-container">
         <a [routerLink]="['/']"  data-target="mobile-menu" class="sidenav-trigger brand-logo right"><i class="material-icons black-text">menu</i></a>
-        
+
         <a *ngIf="onHomePage" [routerLink]="['/']" class="mobile black-text subheader left">
             <b>Tiffany Phan</b>
         </a>
@@ -9,11 +9,16 @@
         <a *ngIf="path === '/resume' || path === '/about'" [routerLink]="['/']"  class="black-text subheader left mobile">
             <i class="material-icons">arrow_back</i>
         </a>
-        
+
+      <a *ngIf="path.includes('/ucd/')" [routerLink]="['/ucd']"  class="black-text subheader left mobile">
+        <i class="material-icons">arrow_back</i>
+      </a>
+
         <ul class="right hide-on-med-and-down">
             <li><a [routerLink]="['/']" [ngClass]="onHomePage ? ['active'] : ['']" class="black-text link">Portfolio</a></li>
             <li><a [routerLink]="['/resume']" routerLinkActive="active" class="black-text link">Resume</a></li>
             <li><a [routerLink]="['/about']" routerLinkActive="active" class="black-text link">About</a></li>
+            <li><a [routerLink]="['/ucd']" routerLinkActive="active" class="black-text link">CSCI 5839</a></li>
             <li><a href="mailto:tiffany.phan@colorado.edu" class="black-text btn resume-btn white offset">Contact Me</a></li>
         </ul>
     </div>
@@ -23,5 +28,6 @@
     <li><a [routerLink]="['/']" [ngClass]="onHomePage ? ['active'] : ['']" class="black-text link">Portfolio</a></li>
     <li><a [routerLink]="['/resume']" routerLinkActive="active" class="black-text link">Resume</a></li>
     <li><a [routerLink]="['/about']" routerLinkActive="active" class="black-text link">About</a></li>
-    <li><a href="mailto:tiffany.phan@colorado.edu" class="black-text btn resume-btn white offset">Contact Me</a></li>
+    <li><a [routerLink]="['/ucd']" routerLinkActive="active" class="black-text link">CSCI 5839</a></li>
+  <li><a href="mailto:tiffany.phan@colorado.edu" class="black-text btn resume-btn white offset">Contact Me</a></li>
 </ul>

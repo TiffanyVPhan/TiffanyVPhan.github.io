@@ -10,6 +10,8 @@ import { FooterComponent } from './component/views/footer/footer.component';
 import { AboutComponent } from './component/views/about/about.component';
 import { ResumeComponent } from './component/views/resume/resume.component';
 import { FadeInComponent } from './component/helper/fade-in/fade-in.component';
+import { UCDLandingComponent } from './component/views/csci-5839/landing/landing.component';
+import { ProjectPitchComponent } from './component/views/csci-5839/project-pitch/project-pitch.component';
 
 const routes: Routes = [
   {
@@ -26,6 +28,14 @@ const routes: Routes = [
     data: {
       highlightPortfolio: true,
     },
+  },
+  {
+    path: 'ucd',
+    component: UCDLandingComponent,
+  },
+  {
+    path: 'ucd/project-pitch',
+    component: ProjectPitchComponent,
   }
 ];
 
@@ -38,13 +48,18 @@ const routes: Routes = [
     FooterComponent,
     ResumeComponent,
     FadeInComponent,
-    AboutComponent
+    AboutComponent,
+    UCDLandingComponent,
+    ProjectPitchComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes, {
       scrollPositionRestoration: 'enabled'
     }),
+  ],
+  exports: [
+    FadeInComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
