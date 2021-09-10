@@ -1,18 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <script>
-    // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
-    (function(){
-      var redirect = sessionStorage.redirect;
-      console.log(redirect, 'hi im redirecting');
-      delete sessionStorage.redirect;
-      if (redirect && redirect != location.href) {
-        history.replaceState(null, null, redirect);
-      }
-    })();
-  </script>
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155857043-1"></script>
   <script>
@@ -45,6 +33,17 @@
   <meta name="author" content="Tiffany Phan">
 <link rel="stylesheet" href="styles.82896886f799b3c6d58c.css"></head>
 <body>
+<script>
+  // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+  (function(){
+    var redirect = sessionStorage.redirect;
+    console.log(redirect, 'hi im redirecting');
+    delete sessionStorage.redirect;
+    if (redirect && redirect != location.href) {
+      history.replaceState(null, null, redirect);
+    }
+  })();
+</script>
   <app-root></app-root>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="runtime.e227d1a0e31cbccbf8ec.js" defer></script><script src="polyfills.a4021de53358bb0fec14.js" defer></script><script src="main.8a38f8741235418865ba.js" defer></script></body>
