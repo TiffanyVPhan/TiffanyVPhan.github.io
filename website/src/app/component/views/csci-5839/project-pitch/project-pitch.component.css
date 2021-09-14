@@ -7,6 +7,10 @@
   height: 800px;
 }
 
+.links {
+  color: var(--pink);
+}
+
 @media only screen and (max-width: 600px) {
   .top-margin {
     margin-top: 20%;
