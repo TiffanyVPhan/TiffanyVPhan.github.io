@@ -13,6 +13,7 @@ import { FadeInComponent } from './component/helper/fade-in/fade-in.component';
 import { UCDLandingComponent } from './component/views/csci-5839/landing/landing.component';
 import { ProjectPitchComponent } from './component/views/csci-5839/project-pitch/project-pitch.component';
 import { UserResearchComponent } from './component/views/csci-5839/user-research/user-research.component';
+import { PrototypeComponent } from './component/views/csci-5839/prototype/prototype/prototype.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'ucd/user-research',
     component: UserResearchComponent,
+  },
+  {
+    path: 'ucd/prototype',
+    component: PrototypeComponent,
   }
 ];
 
@@ -56,7 +61,8 @@ const routes: Routes = [
     AboutComponent,
     UCDLandingComponent,
     ProjectPitchComponent,
-    UserResearchComponent
+    UserResearchComponent,
+    PrototypeComponent
   ],
   imports: [
     BrowserModule,
