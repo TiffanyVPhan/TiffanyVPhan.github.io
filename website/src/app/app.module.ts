@@ -14,6 +14,7 @@ import { UCDLandingComponent } from './component/views/csci-5839/landing/landing
 import { ProjectPitchComponent } from './component/views/csci-5839/project-pitch/project-pitch.component';
 import { UserResearchComponent } from './component/views/csci-5839/user-research/user-research.component';
 import { PrototypeComponent } from './component/views/csci-5839/prototype/prototype/prototype.component';
+import {UserTestingComponent} from './component/views/csci-5839/user-testing/user-testing.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path: 'ucd/prototype',
     component: PrototypeComponent,
+  },
+  {
+    path: 'ucd/user-testing',
+    component: UserTestingComponent,
   }
 ];
 
@@ -62,7 +67,8 @@ const routes: Routes = [
     UCDLandingComponent,
     ProjectPitchComponent,
     UserResearchComponent,
-    PrototypeComponent
+    PrototypeComponent,
+    UserTestingComponent
   ],
   imports: [
     BrowserModule,
