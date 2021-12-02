@@ -15,6 +15,7 @@ import { ProjectPitchComponent } from './component/views/csci-5839/project-pitch
 import { UserResearchComponent } from './component/views/csci-5839/user-research/user-research.component';
 import { PrototypeComponent } from './component/views/csci-5839/prototype/prototype/prototype.component';
 import {UserTestingComponent} from './component/views/csci-5839/user-testing/user-testing.component';
+import { StoryboardComponent } from './component/views/csci-5839/storyboard/storyboard.component';
 
 const routes: Routes = [
   {
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path: 'ucd/user-testing',
     component: UserTestingComponent,
+  },
+  {
+    path: 'ucd/storyboard',
+    component: StoryboardComponent,
   }
 ];
 
@@ -68,7 +73,8 @@ const routes: Routes = [
     ProjectPitchComponent,
     UserResearchComponent,
     PrototypeComponent,
-    UserTestingComponent
+    UserTestingComponent,
+    StoryboardComponent
   ],
   imports: [
     BrowserModule,
